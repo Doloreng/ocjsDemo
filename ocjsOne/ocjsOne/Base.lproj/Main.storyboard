@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="5Ke-5l-jgN">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="OR9-ZI-XJV">
+                                <rect key="frame" x="0.0" y="320" width="600" height="280"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dW6-g8-LJP">
+                                <rect key="frame" x="0.0" y="20" width="600" height="300"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="OR9-ZI-XJV" firstAttribute="width" secondItem="dW6-g8-LJP" secondAttribute="width" id="3cx-3R-zEf"/>
+                            <constraint firstItem="dW6-g8-LJP" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="3hI-tU-BVt"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="dW6-g8-LJP" secondAttribute="bottom" constant="280" id="8Xw-FJ-ryv"/>
+                            <constraint firstItem="dW6-g8-LJP" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="Rdt-fE-Oe1"/>
+                            <constraint firstItem="OR9-ZI-XJV" firstAttribute="top" secondItem="dW6-g8-LJP" secondAttribute="bottom" id="S8L-9R-2kg"/>
+                            <constraint firstItem="OR9-ZI-XJV" firstAttribute="centerX" secondItem="dW6-g8-LJP" secondAttribute="centerX" id="buR-qf-nQc"/>
+                            <constraint firstItem="dW6-g8-LJP" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" constant="-300" id="mJc-rd-YbC"/>
+                            <constraint firstItem="dW6-g8-LJP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nb5-4V-YZ7"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="OR9-ZI-XJV" secondAttribute="bottom" id="pAt-qB-Ovh"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="mJc-rd-YbC"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="outPutTextView" destination="OR9-ZI-XJV" id="I4t-Ll-iyw"/>
+                        <outlet property="webView" destination="dW6-g8-LJP" id="5bh-bR-Vup"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="280" y="315"/>
+        </scene>
+        <!--First View Controller-->
+        <scene sceneID="BWE-k9-j50">
+            <objects>
+                <viewController id="5Ke-5l-jgN" customClass="FirstViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XZG-24-b6I"/>
+                        <viewControllerLayoutGuide type="bottom" id="qvJ-dQ-e1s"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="v47-Wp-i4n">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mtT-ZC-lar">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AnL-g1-RNe">
+                                <rect key="frame" x="200" y="80" width="200" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="9Xo-xU-VVp"/>
+                                    <constraint firstAttribute="width" constant="200" id="L3x-HL-gp9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mtT-ZC-lar" firstAttribute="height" secondItem="v47-Wp-i4n" secondAttribute="height" id="FVA-l2-Lbc"/>
+                            <constraint firstItem="mtT-ZC-lar" firstAttribute="centerX" secondItem="v47-Wp-i4n" secondAttribute="centerX" id="Kef-eA-i2T"/>
+                            <constraint firstItem="AnL-g1-RNe" firstAttribute="top" secondItem="XZG-24-b6I" secondAttribute="bottom" constant="60" id="RJr-fB-xYy"/>
+                            <constraint firstItem="mtT-ZC-lar" firstAttribute="width" secondItem="v47-Wp-i4n" secondAttribute="width" id="ZAU-2F-8jn"/>
+                            <constraint firstItem="mtT-ZC-lar" firstAttribute="centerY" secondItem="v47-Wp-i4n" secondAttribute="centerY" id="v5I-oK-B6u"/>
+                            <constraint firstItem="AnL-g1-RNe" firstAttribute="centerX" secondItem="v47-Wp-i4n" secondAttribute="centerX" id="xdB-6K-4V1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="alab" destination="AnL-g1-RNe" id="eBw-lQ-sRY"/>
+                        <outlet property="webView" destination="mtT-ZC-lar" id="bPZ-RS-J9L"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xJV-uR-T4y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="280" y="969"/>
+        </scene>
+    </scenes>
+</document>

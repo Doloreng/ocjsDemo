@@ -1,0 +1,37 @@
+<html>
+<header>
+<meta http-equiv= "Content-Type" content="text/html; charset=utf-8"/>
+<p id="p1">Hello World!</p>
+
+<script type="text/javascript">
+<!--    document.getElementById("p1").innerHTML="触发了";-->
+secondClick();
+    var TestJSobject = new object();
+    function secondClick(){
+        document.getElementById("p1").innerHTML="触发了";
+        TestJSobject.name="dada";
+        TestJSobject.age = "26";
+        TestJSobject.noParameter();
+        TestJSobject.oneParameter(TestJSobject.name);
+        TestJSobject.twoParameterSecond(TestJSobject.name,TestJSobject.age);
+        
+    }
+
+    function noParameter(message){
+        alert("hello");
+    }
+
+</script>
+</header>
+<body>
+
+<h2>这是第二种Object方式</h2>
+<br/>
+<br/>
+<button id="oneBtn" type="button" onclick="secondClick()">点击我</button>
+</body>
+
+
+
+
+</html>
